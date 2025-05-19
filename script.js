@@ -1,8 +1,8 @@
 //your JS code here. If required.
-const pt = document.getElementByTagName("p");
-const btn = document.getElementByTagName("button");
+const pt = document.getElementById("counter");
+const btn = document.getElementById("incrementBtn");
 
 btn.addEventListener("click", () => {
 	alert(pt.textContent);
-	pt.innerHtml = parseInt(pt.innerHtml) + 1;
+	pt.textContent = parseInt(pt.textContent) + 1;
 })
