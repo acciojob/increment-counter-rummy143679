@@ -3,6 +3,6 @@ const pt = document.getElementById("counter");
 const btn = document.getElementById("incrementBtn");
 
 btn.addEventListener("click", () => {
-	alert(pt.textContent);
+	alert(parseInt(pt.textContent));
 	pt.textContent = parseInt(pt.textContent) + 1;
 })
